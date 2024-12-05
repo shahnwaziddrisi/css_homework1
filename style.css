@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/736x/19/8b/2f/198b2f01e73b905772279616eccc7c65.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Black overlay */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Black tint with 60% opacity */
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+/* Logo */
+#navbar .logo img {
+    width: 220px;
+    padding-left: 200px;
+}
+
+/* Buttons */
+.button {
+    display: flex;
+    padding-right: 200px;
+    gap: 20px;
+}
+
+.button div {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Centered text */
+.content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 90%;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    /* Adjusted font size */
+    white-space: nowrap;
+    /* Prevent line break */
+    overflow: hidden;
+    /* Optional: Hide overflow text */
+    margin: 0%;
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin: 0;
+}
